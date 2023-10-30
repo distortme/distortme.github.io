@@ -102,4 +102,8 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/distortme/site.git
+  branch: main
+  message: 'common deploy'
+  token: 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
