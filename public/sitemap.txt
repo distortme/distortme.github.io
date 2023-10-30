@@ -1,4 +1,3 @@
-https://distortme.github.io/404/index.html
 https://distortme.github.io/categories/index.html
 https://distortme.github.io/tags/index.html
 https://distortme.github.io/sitemap/index.html

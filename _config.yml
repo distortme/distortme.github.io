@@ -104,3 +104,14 @@ tag_generator:
 
 symbols_count_time:
   total_time: false
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>枫叶鸣廊</title>
+  
+  
+  <link href="https://distortme.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://distortme.github.io/"/>
+  <updated>2023-10-30T01:51:45.343Z</updated>
+  <id>https://distortme.github.io/</id>
+  
+  <author>
+    <name>立崖</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://distortme.github.io/2023/10/30/hello-world/"/>
+    <id>https://distortme.github.io/2023/10/30/hello-world/</id>
+    <published>2023-10-30T01:51:45.343Z</published>
+    <updated>2023-10-30T01:51:45.343Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your veryfirst post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> formore info. If you get any problems when using Hexo, you can find theanswer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> oryou can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><pre><code class="highlight bash">$ hexo new <span class="string">&quot;My New Post&quot;</span></code></pre><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="run-server">Run server</h3><pre><code class="highlight bash">$ hexo server</code></pre><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="generate-static-files">Generate static files</h3><pre><code class="highlight bash">$ hexo generate</code></pre><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><pre><code class="highlight bash">$ hexo deploy</code></pre><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9oZXhvLmlvLw==&quot;&gt;Hexo&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;! This is your very</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
