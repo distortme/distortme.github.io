@@ -106,4 +106,4 @@ deploy:
   repo: https://github.com/distortme/distortme.github.io.git
   branch: main
   message: 'common deploy'
-  token: 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
+  token: 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
