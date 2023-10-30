@@ -98,12 +98,3 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: https://github.com/distortme/distortme.github.io.git
-  branch: main
-  message: 'common deploy'
-  token: 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
