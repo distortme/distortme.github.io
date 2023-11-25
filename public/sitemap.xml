@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://distortme.github.io/2023/11/09/%E5%BD%93%E6%97%B6%E6%98%8E%E6%9C%88/</loc>
+    <loc>https://distortme.github.io/2023/11/25/Introduction-to-Markdown/</loc>
     
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2023-11-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://distortme.github.io/2023/11/25/What-This-Site-Is-About/</loc>
+    
+    <lastmod>2023-11-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,15 +49,22 @@
 
   <url>
     <loc>https://distortme.github.io/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2023-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://distortme.github.io/tags/%E9%9A%8F%E6%83%B3/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <loc>https://distortme.github.io/tags/code/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://distortme.github.io/tags/exception/</loc>
+    <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -56,8 +72,15 @@
 
   
   <url>
-    <loc>https://distortme.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <loc>https://distortme.github.io/categories/tech/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://distortme.github.io/categories/life/</loc>
+    <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
