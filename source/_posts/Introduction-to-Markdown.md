@@ -8,6 +8,10 @@ tags:
 - code
 ---
 
+本文介绍基础的`markdown`语法。
+
+<!-- more -->
+
 ## 块语法
 
 ### 段落和换行符
@@ -202,9 +206,215 @@ key: balue
 
 `代码` ~~删除~~ $\LaTeX$
 
-## 标签语法
+## `Hexo`标签语法
 
+### 块引用
 
+```ejs
+{% blockquote [author[, source]] [link] [source_link_title] %}
+content
+{% endblockquote %}
+```
 
-{% asset_img p1.png 如果链接不正常怎么显示标题呢 %}
+```ejs
+{% blockquote 鲁迅, 致台静农  %}
+我实在没有说过这样一句话。
+{% endblockquote %}
+```
+
+{% blockquote 鲁迅, 致台静农  %}
+我实在没有说过这样一句话。
+{% endblockquote %}
+
+### 框架
+
+```ejs
+{% iframe url [width] [height] %}
+```
+
+```ejs
+{% iframe https://distortme.github.io/ %}
+```
+
+{% iframe https://distortme.github.io/ %}
+
+### 图片
+
+```ejs
+{% asset_img [class names] slug [width] [height] [title text [alt text]] %}
+```
+
+```ejs
+{% asset_img p1.png "验证戴维南定理的电路图" %}
+```
+
+{% asset_img p1.png "验证戴维南定理的电路图" %}
+
+### 内部文章链接
+
+```ejs
+{% post_link filename [title] [escape] %}
+```
+
+```ejs
+{% post_link Introduction-to-Markdown %}
+```
+
+{% post_link Introduction-to-Markdown %}
+
+## `NexT`标签语法
+
+### 居中引用
+
+```ejs
+{% cq %}Something{% endcq %}
+```
+
+```
+{% cq %}Science and art, life in between. {% endcq %}
+```
+
+{% cq %}Science and art, life in between. {% endcq %}
+
+### 视频
+
+```ejs
+{% video url %}
+```
+
+```ejs
+{% video v1.mp4 %}
+```
+
+{% video v1.mp4 %}
+
+### 按钮
+
+```ejs
+{% button url, text, icon [class], [title] %}
+```
+
+```ejs
+欢迎大家访问我的 {% btn https://distortme.github.io/, 博客首页, home fa-fw fa-lg, 鼠标放上去显示这个 %} 哦！
+```
+
+欢迎大家访问我的 {% btn https://distortme.github.io/, 博客首页, home fa-fw fa-lg, 鼠标放上去显示这个 %} 哦！
+
+### 组图
+
+```ejs
+{% gp [number]-[layout] %}
+{% endgp %}
+```
+
+```ejs
+{% gp 4-3 %}
+{% asset_img p2.png %}
+{% asset_img p3.png %}
+{% asset_img p4.png %}
+{% asset_img p5.png %}
+{% endgp %}
+```
+
+{% gp 4-3 %}
+{% asset_img p2.png %}
+{% asset_img p3.png %}
+{% asset_img p4.png %}
+{% asset_img p5.png %}
+{% endgp %}
+
+### 标签
+
+```ejs
+{% label [class]@text %}
+class: default | primary | success | info | warning | danger
+```
+
+```ejs
+labels: {% label primary@primary %}, {% label success@success %}, {% label info@info %}, {% label warning@warning %} and {% label danger@danger %}, {% label default@default %}
+```
+
+labels: {% label primary@primary %}, {% label success@success %}, {% label info@info %}, {% label warning@warning %} and {% label danger@danger %}, {% label default@default %}
+
+### 提醒
+
+```ejs
+{% note [class] [no-icon] [summary] %}
+Any content (support inline tags too).
+{% endnote %}
+```
+
+```ejs
+{% note info %}
+欢迎来到[我的博客](https://distortme.github.io)。
+{% endnote %}
+```
+
+{% note info %}
+欢迎来到[我的博客](https://distortme.github.io)。
+{% endnote %}
+
+```ejs
+{% note primary 点击打开折叠部分 %}
+这样很好玩，不是吗？
+{% endnote %}
+```
+
+{% note primary 点击打开折叠部分 %}
+这样很好玩，不是吗？
+{% endnote %}
+
+### 标签页
+
+```ejs
+{% tabs Unique name, [index] %}
+<!-- tab [Tab caption] [@icon] -->
+Any content (support inline tags too).
+<!-- endtab -->
+{% endtabs %}
+```
+
+```ejs
+{% tabs 默认名称, 2 %}
+<!-- tab 修改名称 -->
+当然可以。
+<!-- endtab -->
+
+<!-- tab -->
+因为`index=2`所以你首先看到这个。
+而且默认名称后面会加标签页的序号。
+<!-- endtab -->
+
+<!-- tab 显示图标@font -->
+当然也可以。
+<!-- endtab -->
+{% endtabs %}
+```
+
+{% tabs 默认名称, 2 %}
+<!-- tab 修改名称 -->
+当然可以。
+<!-- endtab -->
+
+<!-- tab -->
+因为`index=2`所以你首先看到这个。
+而且默认名称后面会加标签页的序号。
+<!-- endtab -->
+
+<!-- tab 显示图标@font -->
+当然也可以。
+<!-- endtab -->
+{% endtabs %}
+
+### PDF
+
+```ejs
+{% pdf url [height] %}
+```
+
+```ejs
+{% pdf t1.pdf %}
+```
+
+{% pdf t1.pdf %}
 

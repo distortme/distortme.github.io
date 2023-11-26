@@ -23,18 +23,22 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"distortme.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":10,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="块语法 段落和换行符 段落由多个空行分隔，单行中断会被忽略。多个空格与单个空格效果相同。 标题 标题在行的开头使用1-6个#，对应1-6的标题级别。 #### 这是四级标题 这是四级标题 引用 &gt; 这是一个两段的块引用。这是第一段。 &gt; &gt; 这是第二段。  &gt; 这是另一个只有一段的块引用。  这是一个两段的块引用。这是第一段。 这是第二段。   这是另一个只有一段的块引用。">
+    <meta name="description" content="本文介绍基础的markdown语法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Introduction to Markdown">
 <meta property="og:url" content="https://distortme.github.io/2023/11/25/Introduction-to-Markdown/index.html">
 <meta property="og:site_name" content="枫叶鸣廊">
-<meta property="og:description" content="块语法 段落和换行符 段落由多个空行分隔，单行中断会被忽略。多个空格与单个空格效果相同。 标题 标题在行的开头使用1-6个#，对应1-6的标题级别。 #### 这是四级标题 这是四级标题 引用 &gt; 这是一个两段的块引用。这是第一段。 &gt; &gt; 这是第二段。  &gt; 这是另一个只有一段的块引用。  这是一个两段的块引用。这是第一段。 这是第二段。   这是另一个只有一段的块引用。">
+<meta property="og:description" content="本文介绍基础的markdown语法。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://localhost:4000/">
 <meta property="og:image" content="https://distortme.github.io/images/favicon.ico">
 <meta property="og:image" content="https://distortme.github.io/2023/11/25/Introduction-to-Markdown/p1.png">
+<meta property="og:image" content="https://distortme.github.io/2023/11/25/Introduction-to-Markdown/p2.png">
+<meta property="og:image" content="https://distortme.github.io/2023/11/25/Introduction-to-Markdown/p3.png">
+<meta property="og:image" content="https://distortme.github.io/2023/11/25/Introduction-to-Markdown/p4.png">
+<meta property="og:image" content="https://distortme.github.io/2023/11/25/Introduction-to-Markdown/p5.png">
 <meta property="article:published_time" content="2023-11-25T15:29:37.000Z">
-<meta property="article:modified_time" content="2023-11-25T17:59:44.707Z">
+<meta property="article:modified_time" content="2023-11-26T07:21:19.470Z">
 <meta property="article:author" content="立崖">
 <meta property="article:tag" content="code">
 <meta name="twitter:card" content="summary">
@@ -149,7 +153,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%97%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">块语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AE%B5%E8%90%BD%E5%92%8C%E6%8D%A2%E8%A1%8C%E7%AC%A6"><span class="nav-number">1.1.</span> <span class="nav-text">段落和换行符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E9%A2%98"><span class="nav-number">1.2.</span> <span class="nav-text">标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.2.1.</span> <span class="nav-text">这是四级标题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8"><span class="nav-number">1.3.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">1.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="nav-number">1.5.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%9D%97"><span class="nav-number">1.6.</span> <span class="nav-text">数学公式块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.7.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%84%9A%E6%B3%A8"><span class="nav-number">1.8.</span> <span class="nav-text">脚注</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B0%B4%E5%B9%B3%E7%BA%BF"><span class="nav-number">1.9.</span> <span class="nav-text">水平线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yaml-front-matter"><span class="nav-number">1.10.</span> <span class="nav-text">YAML Front Matter</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E8%81%94%E8%AF%AD%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">内联语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5"><span class="nav-number">2.1.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87"><span class="nav-number">2.2.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.3.</span> <span class="nav-text">文字格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E8%AF%AD%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">标签语法</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%97%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">块语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AE%B5%E8%90%BD%E5%92%8C%E6%8D%A2%E8%A1%8C%E7%AC%A6"><span class="nav-number">1.1.</span> <span class="nav-text">段落和换行符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E9%A2%98"><span class="nav-number">1.2.</span> <span class="nav-text">标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.2.1.</span> <span class="nav-text">这是四级标题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8"><span class="nav-number">1.3.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">1.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="nav-number">1.5.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%9D%97"><span class="nav-number">1.6.</span> <span class="nav-text">数学公式块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.7.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%84%9A%E6%B3%A8"><span class="nav-number">1.8.</span> <span class="nav-text">脚注</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B0%B4%E5%B9%B3%E7%BA%BF"><span class="nav-number">1.9.</span> <span class="nav-text">水平线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yaml-front-matter"><span class="nav-number">1.10.</span> <span class="nav-text">YAML Front Matter</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E8%81%94%E8%AF%AD%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">内联语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5"><span class="nav-number">2.1.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87"><span class="nav-number">2.2.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.3.</span> <span class="nav-text">文字格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo%E6%A0%87%E7%AD%BE%E8%AF%AD%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">Hexo标签语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9D%97%E5%BC%95%E7%94%A8"><span class="nav-number">3.1.</span> <span class="nav-text">块引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A1%86%E6%9E%B6"><span class="nav-number">3.2.</span> <span class="nav-text">框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87-1"><span class="nav-number">3.3.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E9%83%A8%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5"><span class="nav-number">3.4.</span> <span class="nav-text">内部文章链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next%E6%A0%87%E7%AD%BE%E8%AF%AD%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">NexT标签语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%85%E4%B8%AD%E5%BC%95%E7%94%A8"><span class="nav-number">4.1.</span> <span class="nav-text">居中引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%86%E9%A2%91"><span class="nav-number">4.2.</span> <span class="nav-text">视频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E9%92%AE"><span class="nav-number">4.3.</span> <span class="nav-text">按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%84%E5%9B%BE"><span class="nav-number">4.4.</span> <span class="nav-text">组图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE"><span class="nav-number">4.5.</span> <span class="nav-text">标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E9%86%92"><span class="nav-number">4.6.</span> <span class="nav-text">提醒</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E9%A1%B5"><span class="nav-number">4.7.</span> <span class="nav-text">标签页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pdf"><span class="nav-number">4.8.</span> <span class="nav-text">PDF</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -247,7 +251,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-26 01:59:44" itemprop="dateModified" datetime="2023-11-26T01:59:44+08:00">2023-11-26</time>
+      <time title="修改时间：2023-11-26 15:21:19" itemprop="dateModified" datetime="2023-11-26T15:21:19+08:00">2023-11-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -266,14 +270,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>752</span>
+      <span>1.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
+      <span>5 分钟</span>
     </span>
 </div>
 
@@ -283,7 +287,9 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="块语法">块语法</h2>
+    <div class="post-body" itemprop="articleBody"><p>本文介绍基础的<code>markdown</code>语法。</p>
+<span id="more"></span>
+<h2 id="块语法">块语法</h2>
 <h3 id="段落和换行符">段落和换行符</h3>
 <p>段落由多个空行分隔，单行中断会被忽略。多个空格与单个空格效果相同。</p>
 <h3 id="标题">标题</h3>
@@ -453,8 +459,103 @@ title="鼠标移到图片上显示这个" alt="替代文字" />
 <strong><em>加粗的斜体</em></strong></p>
 <p><code>代码</code> <del>删除</del> <span
 class="math inline">\(\LaTeX\)</span></p>
-<h2 id="标签语法">标签语法</h2>
-<img data-src="/2023/11/25/Introduction-to-Markdown/p1.png" class="" title="如果链接不正常怎么显示标题呢">
+<h2 id="hexo标签语法"><code>Hexo</code>标签语法</h2>
+<h3 id="块引用">块引用</h3>
+<pre><code class="highlight ejs">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;
+content
+&#123;% endblockquote %&#125;</code></pre>
+<pre><code class="highlight ejs">&#123;% blockquote 鲁迅, 致台静农  %&#125;
+我实在没有说过这样一句话。
+&#123;% endblockquote %&#125;</code></pre>
+<blockquote><p>我实在没有说过这样一句话。</p>
+<footer><strong>鲁迅</strong><cite>致台静农</cite></footer></blockquote>
+<h3 id="框架">框架</h3>
+<pre><code class="highlight ejs">&#123;% iframe url [width] [height] %&#125;</code></pre>
+<pre><code class="highlight ejs">&#123;% iframe https://distortme.github.io/ %&#125;</code></pre>
+<iframe src="https://distortme.github.io/" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+<h3 id="图片-1">图片</h3>
+<pre><code class="highlight ejs">&#123;% asset_img [class names] slug [width] [height] [title text [alt text]] %&#125;</code></pre>
+<pre><code class="highlight ejs">&#123;% asset_img p1.png &quot;验证戴维南定理的电路图&quot; %&#125;</code></pre>
+<img data-src="/2023/11/25/Introduction-to-Markdown/p1.png" class="" title="验证戴维南定理的电路图">
+<h3 id="内部文章链接">内部文章链接</h3>
+<pre><code class="highlight ejs">&#123;% post_link filename [title] [escape] %&#125;</code></pre>
+<pre><code class="highlight ejs">&#123;% post_link Introduction-to-Markdown %&#125;</code></pre>
+<a href="/2023/11/25/Introduction-to-Markdown/" title="Introduction to Markdown">Introduction to Markdown</a>
+<h2 id="next标签语法"><code>NexT</code>标签语法</h2>
+<h3 id="居中引用">居中引用</h3>
+<pre><code class="highlight ejs">&#123;% cq %&#125;Something&#123;% endcq %&#125;</code></pre>
+<pre><code class="highlight plaintext">&#123;% cq %&#125;Science and art, life in between. &#123;% endcq %&#125;</code></pre>
+<blockquote class="blockquote-center">
+<p>Science and art, life in between.</p>
+
+</blockquote>
+<h3 id="视频">视频</h3>
+<pre><code class="highlight ejs">&#123;% video url %&#125;</code></pre>
+<pre><code class="highlight ejs">&#123;% video v1.mp4 %&#125;</code></pre>
+<video src="v1.mp4" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
+<h3 id="按钮">按钮</h3>
+<pre><code class="highlight ejs">&#123;% button url, text, icon [class], [title] %&#125;</code></pre>
+<pre><code class="highlight ejs">欢迎大家访问我的 &#123;% btn https://distortme.github.io/, 博客首页, home fa-fw fa-lg, 鼠标放上去显示这个 %&#125; 哦！</code></pre>
+<p>欢迎大家访问我的 <a class="btn" href="https://distortme.github.io/" title="鼠标放上去显示这个"><i class="fa fa-home fa-fw fa-lg"></i>博客首页</a> 哦！</p>
+<h3 id="组图">组图</h3>
+<pre><code class="highlight ejs">&#123;% gp [number]-[layout] %&#125;
+&#123;% endgp %&#125;</code></pre>
+<pre><code class="highlight ejs">&#123;% gp 4-3 %&#125;
+&#123;% asset_img p2.png %&#125;
+&#123;% asset_img p3.png %&#125;
+&#123;% asset_img p4.png %&#125;
+&#123;% asset_img p5.png %&#125;
+&#123;% endgp %&#125;</code></pre>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/2023/11/25/Introduction-to-Markdown/p2.png" class=""></div><div class="group-picture-column"><img data-src="/2023/11/25/Introduction-to-Markdown/p3.png" class=""></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/2023/11/25/Introduction-to-Markdown/p4.png" class=""></div><div class="group-picture-column"><img data-src="/2023/11/25/Introduction-to-Markdown/p5.png" class=""></div></div></div>
+<h3 id="标签">标签</h3>
+<pre><code class="highlight ejs">&#123;% label [class]@text %&#125;
+class: default | primary | success | info | warning | danger</code></pre>
+<pre><code class="highlight ejs">labels: &#123;% label primary@primary %&#125;, &#123;% label success@success %&#125;, &#123;% label info@info %&#125;, &#123;% label warning@warning %&#125; and &#123;% label danger@danger %&#125;, &#123;% label default@default %&#125;</code></pre>
+<p>labels: <mark class="label primary">primary</mark>, <mark class="label success">success</mark>, <mark class="label info">info</mark>,
+<mark class="label warning">warning</mark> and <mark class="label danger">danger</mark>, <mark class="label default">default</mark></p>
+<h3 id="提醒">提醒</h3>
+<pre><code class="highlight ejs">&#123;% note [class] [no-icon] [summary] %&#125;
+Any content (support inline tags too).
+&#123;% endnote %&#125;</code></pre>
+<pre><code class="highlight ejs">&#123;% note info %&#125;
+欢迎来到[我的博客](https://distortme.github.io)。
+&#123;% endnote %&#125;</code></pre>
+<div class="note info"><p>欢迎来到<a href="https://distortme.github.io">我的博客</a>。</p>
+</div>
+<pre><code class="highlight ejs">&#123;% note primary 点击打开折叠部分 %&#125;
+这样很好玩，不是吗？
+&#123;% endnote %&#125;</code></pre>
+<details class="note primary"><summary><p>点击打开折叠部分</p>
+</summary>
+<p>这样很好玩，不是吗？</p>
+
+</details>
+<h3 id="标签页">标签页</h3>
+<pre><code class="highlight ejs">&#123;% tabs Unique name, [index] %&#125;
+&lt;!-- tab [Tab caption] [@icon] --&gt;
+Any content (support inline tags too).
+&lt;!-- endtab --&gt;
+&#123;% endtabs %&#125;</code></pre>
+<pre><code class="highlight ejs">&#123;% tabs 默认名称, 2 %&#125;
+&lt;!-- tab 修改名称 --&gt;
+当然可以。
+&lt;!-- endtab --&gt;
+
+&lt;!-- tab --&gt;
+因为`index=2`所以你首先看到这个。
+而且默认名称后面会加标签页的序号。
+&lt;!-- endtab --&gt;
+
+&lt;!-- tab 显示图标@font --&gt;
+当然也可以。
+&lt;!-- endtab --&gt;
+&#123;% endtabs %&#125;</code></pre>
+<div class="tabs" id="默认名称"><ul class="nav-tabs"><li class="tab"><a href="#默认名称-1">修改名称</a></li><li class="tab active"><a href="#默认名称-2">默认名称 2</a></li><li class="tab"><a href="#默认名称-3"><i class="fa fa-font"></i>显示图标</a></li></ul><div class="tab-content"><div class="tab-pane" id="默认名称-1"><p>当然可以。</p></div><div class="tab-pane active" id="默认名称-2"><p>因为<code>index=2</code>所以你首先看到这个。
+而且默认名称后面会加标签页的序号。</p></div><div class="tab-pane" id="默认名称-3"><p>当然也可以。</p></div></div></div>
+<h3 id="pdf">PDF</h3>
+<pre><code class="highlight ejs">&#123;% pdf url [height] %&#125;</code></pre>
+<pre><code class="highlight ejs">&#123;% pdf t1.pdf %&#125;</code></pre>
+<div class="pdf-container" data-target="t1.pdf" data-height="500px"></div>
 <aside id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
@@ -562,6 +663,8 @@ class="footnote-back" role="doc-backlink">↩︎</a></p></li>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>
 
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.12/pdfobject.min.js","integrity":"sha256-g2xji1rlE3KsGVClvuxTbcR0Kn2+wtQADSff2Tbb4zA="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
 
 
 
