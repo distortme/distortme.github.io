@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>人间失格</title>
+        <link>http://localhost:1313/</link>
+        <description>立崖的小窝</description>
+        <generator>Hugo 0.135.0 https://gohugo.io/</generator>
+        
+            <language>zh-CN</language>
+        
+        
+            <managingEditor>2437957029@qq.com (立崖)</managingEditor>
+        
+        
+            <webMaster>2437957029@qq.com (立崖)</webMaster>
+        
+        
+        <lastBuildDate>Tue, 15 Oct 2024 05:45:06 &#43;0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="http://localhost:1313/rss.xml" />
+        
+        
+            <item>
+                <title>test</title>
+                <link>http://localhost:1313/fun/asw/</link>
+                <guid isPermaLink="true">http://localhost:1313/fun/asw/</guid>
+                <pubDate>Tue, 15 Oct 2024 03:31:41 &#43;0800</pubDate>
+                
+                
+                
+                    <description></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="http://localhost:1313/fun/">fun\</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://localhost:1313/tags/test/">test</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="http://localhost:1313/tags/ass/">ass</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
