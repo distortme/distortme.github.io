@@ -14,7 +14,7 @@ cache:
   enable: true
 
 # Remove unnecessary files after hexo generate.
-minify: false
+minify: true
 
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
@@ -29,7 +29,7 @@ custom_file_path:
   #bodyEnd: source/_data/body-end.njk
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+  style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -37,13 +37,13 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: true
 
 
 # ---------------------------------------------------------------
@@ -51,11 +51,11 @@ darkmode: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  #android_manifest: /manifest.json
+  small: /images/favicon.ico
+  medium: /images/favicon.png
+  apple_touch_icon: /images/apple-touch-icon.png
+  safari_pinned_tab: /images/favicon.svg
+  android_manifest: /images/site.webmanifest
 
 # Custom Logo (Warning: Do not support scheme Mist)
 custom_logo: #/uploads/custom-logo.png
@@ -64,14 +64,14 @@ custom_logo: #/uploads/custom-logo.png
 # See: https://creativecommons.org/about/cclicenses/
 creative_commons:
   # Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | cc-zero
-  license: by-nc-sa
+  license: cc-zero
   # Available values: big | small
   size: small
   sidebar: false
   post: false
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-  language:
+  language: deed.zh
 
 # Open graph settings
 # See: https://hexo.io/docs/helpers#open-graph
@@ -98,8 +98,8 @@ open_graph:
 menu:
   #home: / || fa fa-home
   #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
   #archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -108,7 +108,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -157,8 +157,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  GitHub: https://github.com/distortme || fab fa-github
+  E-Mail: mailto:2437957029@qq.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -188,7 +188,7 @@ toc:
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
   # Maximum heading depth of generated toc.
@@ -205,23 +205,23 @@ language_switcher: false
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
-  #since: 2021
+  since: 2025
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
+    name: fa fa-fire
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#808080"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   # Set to `false` to disable the copyright statement.
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
@@ -241,11 +241,11 @@ footer:
 # ---------------------------------------------------------------
 
 # Use `description` in front-matter to specify post excerpt.
-excerpt_description: true
+excerpt_description: false
 
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
-read_more_btn: true
+read_more_btn: false
 
 # Post meta display settings
 post_meta:
@@ -301,7 +301,7 @@ post_edit:
 
 # Show previous post and next post in post footer if exists
 # Available values: left | right | false
-post_navigation: left
+post_navigation: false
 
 
 # ---------------------------------------------------------------
@@ -347,7 +347,7 @@ text_align:
   mobile: justify
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: false
+mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
@@ -368,11 +368,11 @@ codeblock:
     light: default
     dark: stackoverflow-dark
   prism:
-    light: prism
-    dark: prism-dark
+    light: prism-one-light
+    dark: prism-one-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
     style:
   # Fold code block
@@ -426,7 +426,7 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
@@ -438,31 +438,31 @@ font:
 
   # Global font settings used for all elements inside <body>.
   global:
-    external: true
-    family: Lato
+    external: false
+    family: MyChancery, MyKaiTi
     size:
 
   # Font settings for site title (.site-title).
   title:
-    external: true
-    family:
-    size:
+    external: false
+    family: MyChancery, MyXiaoZhuan
+    size: 2.2
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
-    external: true
-    family:
+    external: false
+    family: MyGaramond, MyFangSong
     size:
 
   # Font settings for posts (.post-body).
   posts:
-    external: true
-    family:
+    external: false
+    family: MyCentaur, MyShuSong
 
   # Font settings for <code> and code blocks.
   codes:
-    external: true
-    family:
+    external: false
+    family: MyConsolas, HeiTi
 
 
 # ---------------------------------------------------------------
@@ -508,7 +508,7 @@ note:
   #  - modern    bootstrap callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
+  style: flat
   icons: false
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
