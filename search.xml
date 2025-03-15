@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>文章语法</title>
+    <url>/code/posts/</url>
+    <content><![CDATA[<p>这是一个按钮：<a class="btn" href="https://github.com" title="GitHub"><i class="fab fa-github fa-fw fa-lg"></i>GitHub</a>，其代码如下： <pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">&#123;% btn https://github.com, GitHub, fab fa-github fa-fw fa-lg, GitHub %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre> <details class="note info"><summary><p>代码藏在里面</p>
+</summary>
+<h3 id="note-效果">note 效果</h3>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">&#123;% note info 代码藏在里面 %&#125;
+&#123;% endnote %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><code>(empty)|default|primary|info|success|warning|danger</code></p>
+
+</details>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">&#123;% pdf /pdf/physics.pdf 600px %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre> <div class="pdf-container" data-target="https://distortme.github.io/pdf/physics.pdf" data-height="500px"></div> <div class="tabs" id="tabs代码"><ul class="nav-tabs"><li class="tab active"><a href="#tabs代码-1">Tabs代码 1</a></li><li class="tab"><a href="#tabs代码-2">Tabs代码 2</a></li><li class="tab"><a href="#tabs代码-3">Tabs代码 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tabs代码-1"><p>不在这儿</p></div><div class="tab-pane" id="tabs代码-2"><p>不在这儿</p></div><div class="tab-pane" id="tabs代码-3"><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">&#123;% tabs Tabs Code %&#125;
+<span class="token comment">&lt;!-- tab --></span>
+something
+<span class="token comment">&lt;!-- endtab --></span>
+&#123;% endtabs %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></div></div> <span class="math display">\[
+\sin^2x = 1-\cos^2x
+\]</span> pandoc有些问题。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+  </entry>
+</search>
