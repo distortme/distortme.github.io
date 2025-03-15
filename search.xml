@@ -17,7 +17,7 @@ something
 <span class="token comment">&lt;!-- endtab --></span>
 &#123;% endtabs %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></div></div> <span class="math display">\[
 \sin^2x = 1-\cos^2x
-\]</span> pandoc有些问题。</p>
+\]</span></p>
 ]]></content>
       <categories>
         <category>编程</category>
